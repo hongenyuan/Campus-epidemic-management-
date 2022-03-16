@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flexContainer {
+            display: flex;
+            height: 100%; 
+            flex-direction: column; 
+        }
+
+        .header,
+        .footer {
+            font-size: 18px;
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+        }
+
+        .header {
+            height: 100px;
+            background: #665aa4;
+        }
+
+        .main {
+            flex-grow: 1; 
+            text-align: center;
+            background: #3dc95d;
+        }
+
+        .footer {
+            height: 100px;
+            background: #fc430b;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flexContainer">
+        <header class="header">header：height = 100px</header>
+        <main class="main">conent：height = auto main</main>
+        <footer class="footer">footer：height = 100px</footer>
+    </div>
+</body>
+
+</html>
